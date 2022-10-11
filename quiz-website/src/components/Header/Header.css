@@ -1,3 +1,33 @@
-.nav-item{
-    text-decoration-line: none;
+.main-header{
+    display: flex;
+    background-color: #1C2B35;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0% 0% 1% 5%;
+}
+
+.main-header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    /* position: sticky;
+    top: 0; */
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5% 25% 0% 0%;
+}
+
+.header a:hover{
+    color: orange;
 }

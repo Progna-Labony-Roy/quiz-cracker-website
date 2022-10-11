@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
-            <nav>
-                <Link to='/'><span className='nav-item fs-5 text-dark fw-semibold p-3'>Home</span></Link>
-                <Link to='/topics'><span className='nav-item fs-5 text-dark fw-semibold p-3'>Topics</span></Link>
-                <Link to='/statistics'><span className='nav-item fs-5 text-dark fw-semibold p-3'>Statistics</span></Link>
-                <Link to='/blog'><span className='nav-item fs-5 text-dark fw-semibold p-3'>Blog</span></Link>
+        <div className='main-header'>
+            <Link><h1>quiz</h1></Link>
+            <nav className='header'>
+                
+                <Link to='/'>Home</Link>
+                <Link to='/topics'>Topics</Link>
+                <Link to='/statistics'>Statistics</Link>
+                <Link to='/blog'>Blog</Link>
             </nav>
         </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Header from "../Header/Header";
 import Option from "../Option/Option";
 import Question from "../Question/Question";
 import "./TopicDetails.css";
@@ -12,6 +13,7 @@ const TopicDetails = () => {
   
   return (
     <div>
+      <Header></Header>
       {questions.map((question) => (
         <Question key={question.id} question={question} ></Question>
       ))}

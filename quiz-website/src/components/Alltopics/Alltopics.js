@@ -5,7 +5,7 @@ import Topic from '../Topic/Topic';
 const Alltopics = () => {
     const quizTopics=useLoaderData();
     const topics=quizTopics.data;
-    console.log(topics);
+    
     return (
         <div className='container grid mt-5'>
             {

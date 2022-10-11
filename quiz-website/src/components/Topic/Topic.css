@@ -1,0 +1,18 @@
+.quizTopic{
+    border: 1px solid ghostwhite;
+    border-radius: 10px;
+    margin: 10px;
+    height: 340px;
+    width:280px;
+    background-color: rgb(247, 242, 242);
+}
+
+img{
+    height: 260px;
+    width:270px;
+    padding: 3% 0 3% 3%;
+}
+
+.topicName{
+    background-color: #fff;
+}

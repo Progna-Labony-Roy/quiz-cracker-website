@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Header from './Header/Header';
 import { Outlet } from 'react-router-dom';
+import Home from './Home/Home'
+
+export const QuizContext = createContext();
 
 const Root = () => {
+    
     return (
-        <div>
+        <QuizContext.Provider value={[]}>
             <Header></Header>
+            <Home></Home>
             <Outlet></Outlet>
-        </div>
+        </QuizContext.Provider>
     );
 };
 

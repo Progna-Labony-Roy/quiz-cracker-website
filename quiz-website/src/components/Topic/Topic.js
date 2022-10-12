@@ -6,13 +6,18 @@ import "./Topic.css";
 // import Topics from '../Topics/Topics';
 
 function Topic({ topic }) {
-  const {id,name,logo}=topic;
+  const { id, name, logo, total } = topic;
   return (
     <div className="quizTopic">
       <img src={logo} alt="" />
       <div className="topicName">
-        <p>{name}</p>
-        <Link to={`/topic/${id}`}><Button className="btn w-100 ">Start quiz</Button></Link>
+        <div className="container flex space-x-24">
+          <p>{total} questions</p>
+          <p  className="fw-bold">{name} </p>
+        </div>
+        <Link to={`/topic/${id}`}>
+          <Button className="btn w-100 ">Start quiz</Button>
+        </Link>
       </div>
     </div>
   );

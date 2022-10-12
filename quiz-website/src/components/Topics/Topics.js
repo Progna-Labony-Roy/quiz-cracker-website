@@ -1,15 +1,23 @@
 import React from 'react';
-import Alltopics from '../Alltopics/Alltopics';
-import Header from '../Header/Header';
+import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 import './Topics.css'
 
 const Topics = () => {
+    const quizTopics=useLoaderData();
+    const topics=quizTopics.data;
+    
     return (
-        <div>
-            <Header></Header>
-            <Alltopics></Alltopics>
+        <div className='m-5 '>
+            <div className='grid'>
+            {
+                topics.map(topic => <Topic
+                key={topic.id} topic={topic}
+                ></Topic>)
+            }
         </div>
-    )
+        </div>
+    );
 };
 
 export default Topics;

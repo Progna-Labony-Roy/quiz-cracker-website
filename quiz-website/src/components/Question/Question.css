@@ -1,19 +1,33 @@
-.questionAnswer{
-    border:1px solid gainsboro;
+.questionAnswer {
+    border: 1px solid gainsboro;
     border-radius: 10px;
-    height: 300px;
+    height: 350px;
     width: 60%;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
     padding: 10px 0 10px 0;
 }
 
-.eye-icon{
-    display:flex;
+.eye-icon {
+    display: flex;
 }
 
-.options-grid{
+.options-grid {
     display: grid;
-    grid-template-columns:repeat(2,1fr) ;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 60%;
     margin: auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .options-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 85%;
+    }
+
+    .questionAnswer {
+
+        height: 550px;
+    }
 }

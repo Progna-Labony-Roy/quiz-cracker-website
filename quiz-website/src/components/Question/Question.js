@@ -8,11 +8,10 @@ import "./Question.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Question = ({ question, option }) => {
-  const options = question.options;
+const Question = ({ question }) => {
+  const {options,correctAnswer} = question;
   
-
-  const notify = () => toast(question.correctAnswer);
+  const notify = () => toast(correctAnswer);
 
   return (
     <div className="container questionAnswer">
@@ -25,11 +24,9 @@ const Question = ({ question, option }) => {
 
       <h4>{question.question.replace(/(<([^>]+)>)/gi, "")}</h4>
       <div className="grid options-grid">
-      {options.map((option, idx) => (
-        
-        <Option key={idx} option={option}></Option>
-      
-  ))}
+        {options.map((option, idx) => (
+          <Option key={idx} option={option}></Option>
+        ))}
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import {
   YAxis,
   Tooltip,
 } from "recharts";
-import Header from "../Header/Header";
 
 const Statistics = () => {
   const LoadDetails = useLoaderData();
@@ -16,7 +15,6 @@ const Statistics = () => {
 
   return (
     <div>
-      <Header></Header>
       <div className="container mt-5">
         <h2 className="m-5">Line chart for no of quizes for every topics</h2>
         <LineChart

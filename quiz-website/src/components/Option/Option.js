@@ -1,16 +1,14 @@
 import React from "react";
-import './Option.css'
-// import { useLoaderData } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
+import "./Option.css";
 
-const Option = ({option}) => {
-
-  // const LoadDetails = useLoaderData();
-  // const questions = LoadDetails.data.questions;
-  // const options=questions[0].options;
+const Option = ({ option }) => {
   return (
     <div>
-        <li className="option">{option}</li>
+      <Button className="option-btn bg-white">
+        <li className="option text-dark">{option}</li>
+      </Button>
     </div>
   );
 };

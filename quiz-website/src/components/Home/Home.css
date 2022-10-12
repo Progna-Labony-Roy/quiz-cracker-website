@@ -13,3 +13,17 @@
     grid-template-columns: repeat(4,1fr);
     
 }
+
+@media only screen and (max-width: 992px){
+    .home-container{
+        background-image: url("image/bg.jpg");
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-container{
+        background-image: url("image/bg.jpg");
+        height: 1500px;
+    }
+}

@@ -31,3 +31,20 @@
 .header a:hover{
     color: orange;
 }
+
+@media only screen and (max-width: 600px) {
+    .main-header{
+        display: block;
+        background-color: #1C2B35;
+        height: 100px;
+        justify-content: space-between;
+        padding: 0% 0% 1% 5%;
+    }
+
+    .header a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 5% 10% 0% 0%;
+    }
+}

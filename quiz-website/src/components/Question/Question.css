@@ -27,7 +27,18 @@
     }
 
     .questionAnswer {
+        height: 580px;
+    }
+}
 
-        height: 550px;
+@media only screen and (max-width: 500px){
+    .options-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 85%;
+    }
+
+    .questionAnswer {
+        height: 750px;
     }
 }

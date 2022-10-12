@@ -1,11 +1,11 @@
 ﻿# b6-quiz-crackerz-Progna-Labony-Roy
-##Project name : quiz
+## Project name : quiz
 
-##Live Link : 
+## Live Link : 
 https://glowing-daifuku-40754c.netlify.app/
 
-##Features:
+## Features:
 - Quiz questions for various topics
 - A simple chart
 - A blog page
-- customized error loading page
+- customized 

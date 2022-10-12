@@ -8,8 +8,7 @@ const Topics = () => {
     const topics=quizTopics.data;
     
     return (
-        <div className='m-5 '>
-            <div className='grid'>
+        <div className='topic-grid m-5'>
             {
                 topics.map(topic => <Topic
                 key={topic.id} topic={topic}

@@ -1,8 +1,19 @@
 .questionAnswer{
-    border:1px solid goldenrod;
+    border:1px solid gainsboro;
     border-radius: 10px;
-    height: 200px;
+    height: 300px;
     width: 60%;
     margin: 20px 0 20px 0;
     padding: 10px 0 10px 0;
+}
+
+.eye-icon{
+    display:flex;
+}
+
+.options-grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    max-width: 60%;
+    margin: auto;
 }

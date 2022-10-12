@@ -1,28 +1,38 @@
-import React from 'react';
-import Option from '../Option/Option';
-import { useLoaderData } from "react-router-dom";
-import './Question.css'
+import React from "react";
+import Option from "../Option/Option";
+import "./Question.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap";
+import "./Question.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Question = ({question,option}) => {
-  const LoadDetails = useLoaderData();
-  const questions = LoadDetails.data.questions;
-  const options=questions[0].options;
-  console.log(options);
+const Question = ({ question, option }) => {
+  const options = question.options;
+  
 
-    return (
-        <div  className='container questionAnswer'>
-            <h4>{question.question.replace(/(<([^>]+)>)/ig, '')}</h4>
-            {
-                options.map((option ,idx) => 
-                   <ul>
-                    <li>
-                    <Option key={idx} option={option}></Option>
-                    </li>
-                   </ul>
-                )
-            }
-        </div>
-    );
+  const notify = () => toast(question.correctAnswer);
+
+  return (
+    <div className="container questionAnswer">
+      <div className="eye-icon">
+        <Button onClick={notify}>
+          <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+        </Button>
+        <ToastContainer />
+      </div>
+
+      <h4>{question.question.replace(/(<([^>]+)>)/gi, "")}</h4>
+      <div className="grid options-grid">
+      {options.map((option, idx) => (
+        
+        <Option key={idx} option={option}></Option>
+      
+  ))}
+      </div>
+    </div>
+  );
 };
 
 export default Question;

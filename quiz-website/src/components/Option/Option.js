@@ -1,4 +1,5 @@
 import React from "react";
+import './Option.css'
 // import { useLoaderData } from "react-router-dom";
 
 
@@ -9,7 +10,7 @@ const Option = ({option}) => {
   // const options=questions[0].options;
   return (
     <div>
-        <p>{option}</p> 
+        <li className="option">{option}</li>
     </div>
   );
 };

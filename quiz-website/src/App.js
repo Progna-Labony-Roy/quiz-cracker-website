@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
+
 import Home from "./components/Home/Home";
 import Statistics from "./components/Statictics/Statistics";
 import Blog from "./components/Blog/Blog";
@@ -24,6 +25,8 @@ function App() {
         },
         element :<TopicDetails></TopicDetails>}   
   ])
+
+  
 
   return (
     <div className="App">

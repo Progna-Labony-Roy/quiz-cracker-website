@@ -11,7 +11,6 @@ import {
 const Statistics = () => {
   const LoadDetails = useLoaderData();
   const chartData = LoadDetails.data;
-  console.log(chartData);
 
   return (
     <div>
@@ -28,7 +27,7 @@ const Statistics = () => {
             bottom: 5,
           }}
         >
-          <XAxis dataKey="total" />
+          <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Line

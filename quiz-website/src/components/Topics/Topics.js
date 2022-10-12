@@ -15,7 +15,6 @@ const Topics = () => {
                 ></Topic>)
             }
         </div>
-        </div>
     );
 };
 
